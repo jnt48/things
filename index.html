@@ -9,7 +9,9 @@
 <body>
         <h1>Fetching Data From JSON File </h1>
 
-    <div id="product-container">
+        <input type="text">
+
+        <div id="product-container">
 
             <table border="2px solid black ">
                 <thead>
@@ -44,7 +46,7 @@
                 for(let product of products){
                     out +=`
                         <tr> 
-                            <th> <img src='${product.image}'>    </th>
+                            <th> id="box" <img src='${product.image}'>    </th>
                             <th> ${product.title}</th>
                             <th> ${product.description} </th>
                             <th> ${product.price}</th>
@@ -55,6 +57,40 @@
                 placeholder.innerHTML=out;
             })
     
+
+            function filterProduct(){
+                let r= document.querySelector("#product-area");
+
+                fetch("products.json")
+                    .then(function(response){
+                        return response.json();
+                    })
+                    .then(function(products) {
+                    const filteredProducts = products.filter(function(product) {
+                        return (
+                            product.title.toLowerCase().includes(searchTerm) ||
+                            product.description.toLowerCase().includes(searchTerm)
+                        );
+                    });
+
+                    let out = "";
+                    for (let product of filteredProducts) {
+                        out += `
+                            <tr>
+                                <th> <img src='${product.image}'>    </th>
+                                <th> ${product.title}</th>
+                                <th> ${product.description} </th>
+                                <th> ${product.price}</th>
+                            </tr>`;
+                    }
+
+                    placeholder.innerHTML = out;
+                });
+               
+
+            }
+
+            
     
     </script>
 
