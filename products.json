@@ -1,0 +1,38 @@
+[
+    {
+        "image":"12.webp",
+        "title":"Product Title",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis molestias dolore provident distinctio, pariatur deleniti odio quo rerum sit ad delectus quas itaque molestiae qui? Totam provident autem neque. ",
+        "price":"1001"
+    },
+
+    {
+        "image":"7.webp",
+        "title":"Product Title",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis molestias dolore provident distinctio, pariatur deleniti odio quo rerum sit ad delectus quas itaque molestiae qui? Totam provident autem neque. ",
+        "price":"1001"
+    },
+
+    {
+        "image":"5.webp",
+        "title":"Product Title",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis molestias dolore provident distinctio, pariatur deleniti odio quo rerum sit ad delectus quas itaque molestiae qui? Totam provident autem neque. ",
+        "price":"1001"
+
+    },
+    
+    {
+        "image":"1.webp",
+        "title":"Product Title",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis molestias dolore provident distinctio, pariatur deleniti odio quo rerum sit ad delectus quas itaque molestiae qui? Totam provident autem neque. ",
+        "price":"1001"
+    },
+    
+    {
+        "image":"4.jpg",
+        "title":"Product Title",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis molestias dolore provident distinctio, pariatur deleniti odio quo rerum sit ad delectus quas itaque molestiae qui? Totam provident autem neque. ",
+        "price":"1001"
+    }
+
+]
