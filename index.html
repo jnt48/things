@@ -9,7 +9,8 @@
 <body>
         <h1>Fetching Data From JSON File </h1>
 
-         <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Type to search">
+         <input type="text" id="searchInput" placeholder="Type to search">
+         <button onclick="filterProducts()">Search</button>
 
 
         <div id="product-container">
@@ -59,14 +60,15 @@
             })
     
 
-            function filterProduct(){
-                let r= document.querySelector("#product-area");
+ function filterProducts() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const placeholder = document.querySelector("#product-area");
 
-                fetch("products.json")
-                    .then(function(response){
-                        return response.json();
-                    })
-                    .then(function(products) {
+            fetch("products.json")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(products) {
                     const filteredProducts = products.filter(function(product) {
                         return (
                             product.title.toLowerCase().includes(searchTerm) ||
@@ -87,9 +89,7 @@
 
                     placeholder.innerHTML = out;
                 });
-               
-
-            }
+        }
 
             
     
